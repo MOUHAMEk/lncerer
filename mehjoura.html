@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MArisk - Page d'accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les icônes -->
+    <style>
+        /* Style global */
+        body {
+            font-family: 'Roboto', sans-serif; /* Style moderne */
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Couleur de fond */
+        }
+
+        /* En-tête (Header) */
+        header {
+            background-color: #4CAF50; /* Vert élégant */
+            color: white; /* Texte blanc */
+            padding: 20px; /* Espace intérieur */
+            text-align: center; /* Centrage horizontal */
+            font-size: 24px; /* Taille du texte */
+            font-family: 'Pacifico', cursive; /* Style d'écriture élégant */
+        }
+
+        /* Corps (Body) */
+        main {
+            padding: 40px; /* Espace intérieur */
+            text-align: center; /* Centrage horizontal */
+        }
+
+        .photo-box {
+            background-color: white; /* Couleur du cadre */
+            border: 2px solid #4CAF50; /* Bordure verte */
+            border-radius: 10px; /* Bordures arrondies */
+            padding: 30px; /* Espace intérieur */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+            margin-bottom: 30px; /* Espace en bas */
+        }
+
+        .comment-box {
+            background-color: white;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        select {
+            padding: 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: white;
+            font-size: 16px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Style des boutons */
+        .button {
+            padding: 15px 30px; /* Taille du bouton */
+            background-color: #FF5722; /* Couleur orange vif */
+            color: white; /* Texte blanc */
+            border: none; /* Pas de bordure */
+            border-radius: 10px; /* Bordures arrondies */
+            font-size: 18px; /* Taille du texte */
+            text-transform: uppercase; /* Majuscules */
+            cursor: pointer; /* Curseur main */
+            transition: background-color 0.3s; /* Transition douce */
+        }
+
+        .button:hover {
+            background-color: #E64A19; /* Changement de couleur au survol */
+        }
+
+        /* Pied de page (Footer) */
+        footer {
+            background-color: #333; /* Couleur sombre */
+            color: white; /* Texte blanc */
+            padding: 20px; /* Espace intérieur */
+            text-align: center; /* Centrage horizontal */
+        }
+
+        .footer-button {
+            padding: 15px 30px;
+            background-color: #00BCD4; /* Couleur bleue spéciale */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .footer-button:hover {
+            background-color: #0097A7; /* Changement de couleur au survol */
+        }
+
+        .app-name {
+            font-size: 32px; /* Grande taille */
+            font-family: 'Pacifico', cursive; /* Style d'écriture élégant */
+            margin-top: 20px; /* Espace au-dessus */
+        }
+    </style>
+    <script>
+        // Exemple de code JavaScript pour l'interaction avec les boutons
+        function voirActions() {
+            alert("Redirection vers la liste des actions signalées");
+        }
+    </script>
+</head>
+<body>
+
+<!-- En-tête -->
+<header>
+    Bienvenue
+</header>
+
+<!-- Corps principal -->
+<main>
+    <div class="photo-box">
+        <h2>Ajoutez une Photo</h2>
+        <!-- Insertion de l'image -->
+        <input type="file" accept="image/*"> 
+    </div>
+
+    <div class="comment-box">
+        <h2>Laissez un Commentaire</h2>
+        <textarea  placeholder="Votre commentaire ici..."></textarea> 
+    </div>
+
+    <div>
+        <h2>Choisissez un Responsable</h2>
+        <select>
+            <option>Responsable 1</option>
+            <option>Responsable 2</option>
+            <option>Responsable 3</option>
+            <option>Responsable 4</option>
+        </select>
+    </div>
+
+    <div>
+        <button class="button">Envoyer</button>
+    </div>
+</main>
+
+<!-- Pied de page (Footer) -->
+<footer>
+    <button class="footer-button" onclick="voirActions()">Voir la Liste des Actions Signalées</button>
+    <div class="app-name">MArisk</div>
+</footer>
+
+</body>
+</html>
